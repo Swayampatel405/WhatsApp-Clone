@@ -11,6 +11,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusModifier
 import com.appvantage.whatsapp.presentation.splashscreen.SplashScreen
+import com.appvantage.whatsapp.presentation.userregistrationscreen.UserRegistrationScreen
 import com.appvantage.whatsapp.presentation.welcomescreen.WelcomeScreen
 import com.appvantage.whatsapp.ui.theme.WhatsAppTheme
 
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
                     Column(
                         modifier = Modifier.fillMaxSize().padding(pD)
                     ){
-                        WelcomeScreen()
+                        UserRegistrationScreen()
                     }
                 }
             }
