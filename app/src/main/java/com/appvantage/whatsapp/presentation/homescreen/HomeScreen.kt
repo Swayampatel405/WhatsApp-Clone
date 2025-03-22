@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.HorizontalDivider
@@ -121,6 +123,12 @@ fun HomeScreen(modifier: Modifier = Modifier){
             modifier = Modifier.padding(it)
         ){
             HorizontalDivider(thickness = 1.dp)
+
+            LazyColumn{
+                items(chatData){item->
+                    ChatDesign(chatDesignModel = item)
+                }
+            }
         }
     }
 }
