@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusModifier
+import com.appvantage.whatsapp.presentation.homescreen.HomeScreen
 import com.appvantage.whatsapp.presentation.splashscreen.SplashScreen
 import com.appvantage.whatsapp.presentation.userregistrationscreen.UserRegistrationScreen
 import com.appvantage.whatsapp.presentation.welcomescreen.WelcomeScreen
@@ -24,11 +25,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ){pD->
-                    Column(
-                        modifier = Modifier.fillMaxSize().padding(pD)
-                    ){
-                        UserRegistrationScreen()
-                    }
+                    HomeScreen(modifier = Modifier.padding(pD))
                 }
             }
         }
