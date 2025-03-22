@@ -32,6 +32,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.appvantage.whatsapp.R
+import com.appvantage.whatsapp.presentation.bottomnavigation.BottomNavigation
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -117,6 +118,9 @@ fun HomeScreen(modifier: Modifier = Modifier){
                     }
                 }
             )
+        },
+        bottomBar = {
+            BottomNavigation()
         }
     ){
         Column (

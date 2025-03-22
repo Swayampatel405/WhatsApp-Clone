@@ -30,6 +30,30 @@ val chatData = listOf(
         message = "Kaise Ho"
     ),
     ChatDesignModel(
+        image = R.drawable.boy,
+        name = "Salman Khan",
+        time = "10:10 AM",
+        message = "Kaise Ho"
+    ),
+    ChatDesignModel(
+        image = R.drawable.boy,
+        name = "Salman Khan",
+        time = "10:10 AM",
+        message = "Kaise Ho"
+    ),
+    ChatDesignModel(
+        image = R.drawable.boy,
+        name = "Salman Khan",
+        time = "10:10 AM",
+        message = "Kaise Ho"
+    ),
+    ChatDesignModel(
+        image = R.drawable.boy,
+        name = "Salman Khan",
+        time = "10:10 AM",
+        message = "Kaise Ho"
+    ),
+    ChatDesignModel(
         image = R.drawable.carryminati,
         name = "Carryminati",
         time = "10:30 AM",
