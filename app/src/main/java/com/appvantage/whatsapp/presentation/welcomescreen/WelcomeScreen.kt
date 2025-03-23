@@ -25,11 +25,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 import com.appvantage.whatsapp.R
+import com.appvantage.whatsapp.presentation.navigation.Routes
 
 //@Preview(showBackground = true)
 @Composable
-fun WelcomeScreen(){
+fun WelcomeScreen(navHostController: NavHostController){
 
     val annotatedString = buildAnnotatedString {
         withStyle(style = SpanStyle(color = Color.Gray)){
@@ -71,7 +73,7 @@ fun WelcomeScreen(){
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(
-            onClick = {},
+            onClick = {navHostController.navigate(Routes.UserRegistrationScreen)},
             shape = RoundedCornerShape(8.dp),
             colors = ButtonDefaults.buttonColors(
                 containerColor = colorResource(R.color.dark_green)

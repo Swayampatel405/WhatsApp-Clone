@@ -14,6 +14,7 @@ import com.appvantage.whatsapp.presentation.callscreen.CallScreen
 import com.appvantage.whatsapp.presentation.communityscreen.CommunityScreen
 import com.appvantage.whatsapp.presentation.homescreen.ChatDesign
 import com.appvantage.whatsapp.presentation.homescreen.HomeScreen
+import com.appvantage.whatsapp.presentation.navigation.WhatsAppNavigationSystem
 import com.appvantage.whatsapp.presentation.splashscreen.SplashScreen
 import com.appvantage.whatsapp.presentation.updatescreen.UpdateScreen
 import com.appvantage.whatsapp.presentation.userregistrationscreen.UserRegistrationScreen
@@ -29,7 +30,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ){pD->
-                    CallScreen(modifier = Modifier.padding(pD))
+                    WhatsAppNavigationSystem(modifier = Modifier.padding(pD))
                 }
             }
         }
