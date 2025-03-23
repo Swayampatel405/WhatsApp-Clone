@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusModifier
+import com.appvantage.whatsapp.presentation.communityscreen.CommunityScreen
 import com.appvantage.whatsapp.presentation.homescreen.ChatDesign
 import com.appvantage.whatsapp.presentation.homescreen.HomeScreen
 import com.appvantage.whatsapp.presentation.splashscreen.SplashScreen
@@ -27,7 +28,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ){pD->
-                    UpdateScreen(modifier = Modifier.padding(pD))
+                    CommunityScreen(modifier = Modifier.padding(pD))
                 }
             }
         }
