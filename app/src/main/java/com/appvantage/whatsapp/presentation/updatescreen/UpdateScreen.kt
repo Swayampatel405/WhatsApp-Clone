@@ -88,7 +88,7 @@ fun UpdateScreen(modifier: Modifier = Modifier){
                 modifier = Modifier.padding(start = 12.dp, top = 10.dp)
             )
             Column(
-                modifier = Modifier.padding(horizontal = 16.dp)
+                modifier = Modifier.padding(horizontal = 8.dp)
             ){
                 Text(
                     text = "Stay updated on topics that matter to you.Find channels to follow below",
@@ -103,7 +103,12 @@ fun UpdateScreen(modifier: Modifier = Modifier){
                     modifier = Modifier.padding(start = 14.dp, top = 10.dp)
                 )
 
+                sampleChannelData.forEach {channel->
+                    ChannelItem(channelData = channel)
+                }
             }
+
+
 
 
         }
