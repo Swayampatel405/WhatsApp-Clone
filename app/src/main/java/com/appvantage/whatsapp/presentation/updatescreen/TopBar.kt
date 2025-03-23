@@ -40,7 +40,7 @@ fun TopBar(){
 
     Box(modifier = Modifier.fillMaxWidth()) {
         Column{
-            Row(modifier = Modifier.padding(top = 5.dp)) {
+            Row(modifier = Modifier.padding(top = 12.dp)) {
                 if(isSearching){
                   TextField(
                       value = search,
@@ -58,8 +58,7 @@ fun TopBar(){
                 }else{
                     Text(
                         "Updates",
-                        fontSize = 28.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 26.sp,
                         color = Color.Black,
                         modifier = Modifier.padding(start = 12.dp,top = 18.dp)
                     )
