@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.appvantage.whatsapp" />
+                  <option name="mobileSdkAppId" value="1:808613883650:android:e31f892adf33e5b2641c1b" />
+                  <option name="projectId" value="whatsappclone-d7508" />
+                  <option name="projectNumber" value="808613883650" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

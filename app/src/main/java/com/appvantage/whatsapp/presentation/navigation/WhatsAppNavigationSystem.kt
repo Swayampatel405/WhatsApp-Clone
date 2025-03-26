@@ -10,6 +10,7 @@ import com.appvantage.whatsapp.presentation.communityscreen.CommunityScreen
 import com.appvantage.whatsapp.presentation.homescreen.HomeScreen
 import com.appvantage.whatsapp.presentation.splashscreen.SplashScreen
 import com.appvantage.whatsapp.presentation.updatescreen.UpdateScreen
+import com.appvantage.whatsapp.presentation.userregistrationscreen.UserProfileScreen
 import com.appvantage.whatsapp.presentation.userregistrationscreen.UserRegistrationScreen
 import com.appvantage.whatsapp.presentation.welcomescreen.WelcomeScreen
 
@@ -32,7 +33,11 @@ fun WhatsAppNavigationSystem(modifier: Modifier = Modifier){
         }
 
         composable<Routes.UserRegistrationScreen>{
-            UserRegistrationScreen()
+            UserRegistrationScreen(navController)
+        }
+
+        composable<Routes.UserProfileScreen>{
+            UserProfileScreen(navController)
         }
 
         composable<Routes.HomeScreen>{
